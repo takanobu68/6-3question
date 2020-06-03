@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+		// オブジェクトの分割代入
+		// プロパティを変数として定義し直す
+		const data = {
+			name: 'Takanobu',
+			age: 36
+		}
+
+		const { name, age } = data;
+		console.log(name);
+		console.log(age);
+		console.log(data);
+
+		// 配列の分割代入
+		// 配列の値を変数として定義しなおす
+		const studyOrder = ['React','Vue','Angular'];
+		const [first,second,third] = studyOrder;
+		console.log(first)
+		console.log(second)
+		console.log(third)
+
+	</script>
+</body>
+
+</html>
